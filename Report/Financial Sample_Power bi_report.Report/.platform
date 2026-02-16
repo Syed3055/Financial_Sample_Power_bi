@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Financial Sample_Power bi_report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e906fb64-5a35-48d6-a8f1-829f70985248"
+  }
+}

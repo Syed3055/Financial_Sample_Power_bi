@@ -1,0 +1,57 @@
+table Calender
+	lineageTag: 4826eb14-e5c9-4ef9-af66-e6ce2a16d5ab
+
+	column Date
+		formatString: General Date
+		lineageTag: 9527c0fc-967e-4c31-9ea3-11926399ed83
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 3058fc8c-a404-430f-969a-dfa9821c68c4
+			defaultHierarchy: LocalDateTable_29210616-fb68-40e0-90e9-eff25bdb4988.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: 6f9ab49d-a5b2-4972-a026-f8f4171ef426
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		formatString: 0
+		lineageTag: 752cae85-d7f8-45fa-9cff-4bad5e75ed2c
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year_month
+		lineageTag: 3341cecf-8a79-4f0d-88e3-acd47bb3ead3
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year_month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column month_name
+		lineageTag: 2b9abc69-9dd8-48ff-9dd9-765970a29367
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [month_name]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calender = calculated
+		mode: import
+		source = ADDCOLUMNS(CALENDARAUTO(),"Year", YEAR([Date]),"Month",  MONTH([Date]), "Year_month", FORMAT([Date], "yyyy_mm"),"month_name",FORMAT([Date],"mmm"))
+
+	annotation PBI_Id = 4eef6e326bc24d29acc531a654125a6d
+

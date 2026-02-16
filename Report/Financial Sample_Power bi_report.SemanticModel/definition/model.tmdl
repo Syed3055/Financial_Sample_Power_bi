@@ -1,0 +1,22 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["financials"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table financials
+ref table DateTableTemplate_0cdaf6f1-d9fe-43ef-9260-3a236ce8b222
+ref table Calender
+ref table LocalDateTable_29210616-fb68-40e0-90e9-eff25bdb4988
+ref table County_Product_Seg
+
+ref cultureInfo en-US
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Financial Sample_Power bi_report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "64c94212-2a82-4d36-837c-45f80a0b8d17"
+  }
+}
