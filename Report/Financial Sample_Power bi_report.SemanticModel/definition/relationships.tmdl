@@ -1,9 +1,0 @@
-relationship 3058fc8c-a404-430f-969a-dfa9821c68c4
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Calender.Date
-	toColumn: LocalDateTable_29210616-fb68-40e0-90e9-eff25bdb4988.Date
-
-relationship e38d09f5-5ef8-caa2-9886-881eccf5bf8f
-	fromColumn: financials.Date
-	toColumn: Calender.Date
-
